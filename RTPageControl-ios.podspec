@@ -29,7 +29,7 @@ RTPageControl is simple UIKit-control written in swift.
                    DESC
 
   s.homepage     = "https://github.com/RuntimeLLC/RTPageControl-ios"
-  # s.screenshots  = "https://raw.githubusercontent.com/RuntimeLLC/RTPageControl-ios/master/images/RTPageControl.gif"
+  s.screenshots  = "https://raw.githubusercontent.com/RuntimeLLC/RTPageControl-ios/master/images/RTPageControl.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -39,7 +39,7 @@ RTPageControl is simple UIKit-control written in swift.
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
