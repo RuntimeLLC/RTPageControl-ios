@@ -11,11 +11,11 @@ private let RTPageControlDefaultDotImageSize = CGSize(width: 12, height: 12)
 private let RTPageControlDefaultPadding = CGFloat(8)
 private let RTPageControlAnimationDuration = 0.3
 
-protocol RTPageControlDelegate : NSObjectProtocol {
+public protocol RTPageControlDelegate : NSObjectProtocol {
     func pageControl(sender: RTPageControl, didSelectPageAtIndex index: Int)
 }
 
-class RTPageControl: UIControl {
+public class RTPageControl: UIControl {
     
     /// Color of background dots
     var passiveDotColor = UIColor.darkGrayColor() {
