@@ -18,32 +18,32 @@ public protocol RTPageControlDelegate : NSObjectProtocol {
 public class RTPageControl: UIControl {
     
     /// Color of background dots
-    var passiveDotColor = UIColor.darkGrayColor() {
+    public var passiveDotColor = UIColor.darkGrayColor() {
         didSet {
             resetDots()
         }
     }
     /// Color of selected dot
-    var activeDotColor = UIColor.whiteColor() {
+    public var activeDotColor = UIColor.whiteColor() {
         didSet {
             resetDots()
         }
     }
     /// Size of dots
-    var dotSize: CGSize = RTPageControlDefaultDotImageSize {
+    public var dotSize: CGSize = RTPageControlDefaultDotImageSize {
         didSet {
             resetDots()
         }
     }
     /// Distance between dots
-    var padding: CGFloat = RTPageControlDefaultPadding {
+    public var padding: CGFloat = RTPageControlDefaultPadding {
         didSet {
             resetDots()
         }
     }
     /// Current page index
     private var innerCurrentPage: Int = 0
-    var currentPage: Int {
+    public var currentPage: Int {
         get {
             return innerCurrentPage
         }
@@ -52,20 +52,20 @@ public class RTPageControl: UIControl {
         }
     }
     /// Number of pages
-    var numberOfPages: Int = 0 {
+    public var numberOfPages: Int = 0 {
         didSet {
             resetDots()
         }
     }
     /// Delegate
-    var delegate: RTPageControlDelegate?
+    public var delegate: RTPageControlDelegate?
     
     /**
      Sets offset over the current page index
      
      - parameter offset: from -1 to 1
      */
-    func setOffset(offset: CGFloat) {
+    public func setOffset(offset: CGFloat) {
         let position = CGFloat(innerCurrentPage) * (dotSize.width + padding) + dotSize.width/2
         let diff = offset * (dotSize.width + padding)
         setCurrentPosition(position + diff, animated: false)
@@ -76,7 +76,7 @@ public class RTPageControl: UIControl {
      
      - parameter index:
      */
-    func setCurrentPage(index: Int, animated: Bool) {
+    public func setCurrentPage(index: Int, animated: Bool) {
         guard index != innerCurrentPage else {
             return
         }
@@ -112,7 +112,7 @@ public class RTPageControl: UIControl {
     private var passiveDots = [CAShapeLayer]()
     private let lock = NSLock()
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         // add parent layer
         layer.addSublayer(parent)
@@ -128,7 +128,7 @@ public class RTPageControl: UIControl {
         self.addGestureRecognizer(recognizer)
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         // synchronize
         lock.lock()
