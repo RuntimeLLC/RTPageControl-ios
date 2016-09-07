@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RTPageControl_ios
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     

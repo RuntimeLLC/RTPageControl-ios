@@ -1,0 +1,8 @@
+
+platform :ios, '9.0'
+
+use_frameworks!
+
+target 'RTPageControl-ios-demo' do
+	pod 'RTPageControl-ios'
+end

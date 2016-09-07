@@ -1,0 +1,6 @@
+framework module RTPageControl_ios {
+  umbrella header "RTPageControl-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

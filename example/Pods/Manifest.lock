@@ -1,0 +1,12 @@
+PODS:
+  - RTPageControl-ios (1.0.3)
+
+DEPENDENCIES:
+  - RTPageControl-ios
+
+SPEC CHECKSUMS:
+  RTPageControl-ios: 0c9d6828222b7b5557611abce7cb97b64d4c2ca9
+
+PODFILE CHECKSUM: 9bd0fd3d80d91b8fc034575dbb1c6d3bf2355ca2
+
+COCOAPODS: 1.0.1

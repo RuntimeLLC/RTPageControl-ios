@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  RTPageControl-ios
+//  RTPageControl-ios-demo
 //
-//  Created by Daniyar Salakhutdinov on 01.09.16.
+//  Created by Daniyar Salakhutdinov on 07.09.16.
 //  Copyright © 2016 Runtime LLC. All rights reserved.
 //
 

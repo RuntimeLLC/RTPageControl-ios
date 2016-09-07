@@ -1,0 +1,6 @@
+framework module Pods_RTPageControl_ios_demo {
+  umbrella header "Pods-RTPageControl-ios-demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

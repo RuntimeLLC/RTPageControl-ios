@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D5A1AA81D80099200834F98 /* RTPageControl_ios_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A1AA71D80099200834F98 /* RTPageControl_ios_demoTests.swift */; };
+		9D5A1AB31D80099200834F98 /* RTPageControl_ios_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A1AB21D80099200834F98 /* RTPageControl_ios_demoUITests.swift */; };
+		9D5A1ACA1D800A1600834F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A1AC11D800A1600834F98 /* AppDelegate.swift */; };
+		9D5A1ACB1D800A1600834F98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A1AC31D800A1600834F98 /* ViewController.swift */; };
+		9D5A1ACC1D800A1600834F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A1AC51D800A1600834F98 /* Assets.xcassets */; };
+		9D5A1ACD1D800A1600834F98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A1AC61D800A1600834F98 /* LaunchScreen.storyboard */; };
+		9D5A1ACE1D800A1600834F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A1AC81D800A1600834F98 /* Main.storyboard */; };
+		D6B9C913FDC3A163D02D7E77 /* Pods_RTPageControl_ios_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC76C1D5A15E7B7068099A76 /* Pods_RTPageControl_ios_demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D5A1AA41D80099200834F98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D5A1A871D80099100834F98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D5A1A8E1D80099100834F98;
+			remoteInfo = "RTPageControl-ios-demo";
+		};
+		9D5A1AAF1D80099200834F98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D5A1A871D80099100834F98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D5A1A8E1D80099100834F98;
+			remoteInfo = "RTPageControl-ios-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		73F2A184CF8CD8EF4B32C95E /* Pods-RTPageControl-ios-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTPageControl-ios-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTPageControl-ios-demo/Pods-RTPageControl-ios-demo.release.xcconfig"; sourceTree = "<group>"; };
+		74F4EE0DD9DCDE42E7D4D088 /* Pods-RTPageControl-ios-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTPageControl-ios-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTPageControl-ios-demo/Pods-RTPageControl-ios-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		9D5A1A8F1D80099100834F98 /* RTPageControl-ios-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RTPageControl-ios-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5A1A9E1D80099200834F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D5A1AA31D80099200834F98 /* RTPageControl-ios-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RTPageControl-ios-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5A1AA71D80099200834F98 /* RTPageControl_ios_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTPageControl_ios_demoTests.swift; sourceTree = "<group>"; };
+		9D5A1AA91D80099200834F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D5A1AAE1D80099200834F98 /* RTPageControl-ios-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RTPageControl-ios-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5A1AB21D80099200834F98 /* RTPageControl_ios_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTPageControl_ios_demoUITests.swift; sourceTree = "<group>"; };
+		9D5A1AB41D80099200834F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D5A1AC11D800A1600834F98 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D5A1AC31D800A1600834F98 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D5A1AC51D800A1600834F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D5A1AC71D800A1600834F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D5A1AC91D800A1600834F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC76C1D5A15E7B7068099A76 /* Pods_RTPageControl_ios_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTPageControl_ios_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D5A1A8C1D80099100834F98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B9C913FDC3A163D02D7E77 /* Pods_RTPageControl_ios_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5A1AA01D80099200834F98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5A1AAB1D80099200834F98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64CB712F1659209A71A31C22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC76C1D5A15E7B7068099A76 /* Pods_RTPageControl_ios_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D5A1A861D80099100834F98 = {
+			isa = PBXGroup;
+			children = (
+				9D5A1A911D80099200834F98 /* RTPageControl-ios-demo */,
+				9D5A1AA61D80099200834F98 /* RTPageControl-ios-demoTests */,
+				9D5A1AB11D80099200834F98 /* RTPageControl-ios-demoUITests */,
+				9D5A1A901D80099100834F98 /* Products */,
+				A851B04F265EA51AFDEC27C8 /* Pods */,
+				64CB712F1659209A71A31C22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D5A1A901D80099100834F98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D5A1A8F1D80099100834F98 /* RTPageControl-ios-demo.app */,
+				9D5A1AA31D80099200834F98 /* RTPageControl-ios-demoTests.xctest */,
+				9D5A1AAE1D80099200834F98 /* RTPageControl-ios-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D5A1A911D80099200834F98 /* RTPageControl-ios-demo */ = {
+			isa = PBXGroup;
+			children = (
+				9D5A1AC01D800A1600834F98 /* Application */,
+				9D5A1AC21D800A1600834F98 /* Controllers */,
+				9D5A1AC41D800A1600834F98 /* Resources */,
+				9D5A1A9E1D80099200834F98 /* Info.plist */,
+			);
+			path = "RTPageControl-ios-demo";
+			sourceTree = "<group>";
+		};
+		9D5A1AA61D80099200834F98 /* RTPageControl-ios-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D5A1AA71D80099200834F98 /* RTPageControl_ios_demoTests.swift */,
+				9D5A1AA91D80099200834F98 /* Info.plist */,
+			);
+			path = "RTPageControl-ios-demoTests";
+			sourceTree = "<group>";
+		};
+		9D5A1AB11D80099200834F98 /* RTPageControl-ios-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D5A1AB21D80099200834F98 /* RTPageControl_ios_demoUITests.swift */,
+				9D5A1AB41D80099200834F98 /* Info.plist */,
+			);
+			path = "RTPageControl-ios-demoUITests";
+			sourceTree = "<group>";
+		};
+		9D5A1AC01D800A1600834F98 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9D5A1AC11D800A1600834F98 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9D5A1AC21D800A1600834F98 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D5A1AC31D800A1600834F98 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D5A1AC41D800A1600834F98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D5A1AC51D800A1600834F98 /* Assets.xcassets */,
+				9D5A1AC61D800A1600834F98 /* LaunchScreen.storyboard */,
+				9D5A1AC81D800A1600834F98 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A851B04F265EA51AFDEC27C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74F4EE0DD9DCDE42E7D4D088 /* Pods-RTPageControl-ios-demo.debug.xcconfig */,
+				73F2A184CF8CD8EF4B32C95E /* Pods-RTPageControl-ios-demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D5A1A8E1D80099100834F98 /* RTPageControl-ios-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D5A1AB71D80099200834F98 /* Build configuration list for PBXNativeTarget "RTPageControl-ios-demo" */;
+			buildPhases = (
+				95A0762776BCCFC47E8CB2C6 /* [CP] Check Pods Manifest.lock */,
+				9D5A1A8B1D80099100834F98 /* Sources */,
+				9D5A1A8C1D80099100834F98 /* Frameworks */,
+				9D5A1A8D1D80099100834F98 /* Resources */,
+				87E9130D7646C99D30AE2A33 /* [CP] Embed Pods Frameworks */,
+				F4CBDF619BA7ED151C686515 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RTPageControl-ios-demo";
+			productName = "RTPageControl-ios-demo";
+			productReference = 9D5A1A8F1D80099100834F98 /* RTPageControl-ios-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D5A1AA21D80099200834F98 /* RTPageControl-ios-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D5A1ABA1D80099200834F98 /* Build configuration list for PBXNativeTarget "RTPageControl-ios-demoTests" */;
+			buildPhases = (
+				9D5A1A9F1D80099200834F98 /* Sources */,
+				9D5A1AA01D80099200834F98 /* Frameworks */,
+				9D5A1AA11D80099200834F98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D5A1AA51D80099200834F98 /* PBXTargetDependency */,
+			);
+			name = "RTPageControl-ios-demoTests";
+			productName = "RTPageControl-ios-demoTests";
+			productReference = 9D5A1AA31D80099200834F98 /* RTPageControl-ios-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D5A1AAD1D80099200834F98 /* RTPageControl-ios-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D5A1ABD1D80099200834F98 /* Build configuration list for PBXNativeTarget "RTPageControl-ios-demoUITests" */;
+			buildPhases = (
+				9D5A1AAA1D80099200834F98 /* Sources */,
+				9D5A1AAB1D80099200834F98 /* Frameworks */,
+				9D5A1AAC1D80099200834F98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D5A1AB01D80099200834F98 /* PBXTargetDependency */,
+			);
+			name = "RTPageControl-ios-demoUITests";
+			productName = "RTPageControl-ios-demoUITests";
+			productReference = 9D5A1AAE1D80099200834F98 /* RTPageControl-ios-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D5A1A871D80099100834F98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Runtime LLC";
+				TargetAttributes = {
+					9D5A1A8E1D80099100834F98 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9D5A1AA21D80099200834F98 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9D5A1A8E1D80099100834F98;
+					};
+					9D5A1AAD1D80099200834F98 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9D5A1A8E1D80099100834F98;
+					};
+				};
+			};
+			buildConfigurationList = 9D5A1A8A1D80099100834F98 /* Build configuration list for PBXProject "RTPageControl-ios-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D5A1A861D80099100834F98;
+			productRefGroup = 9D5A1A901D80099100834F98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D5A1A8E1D80099100834F98 /* RTPageControl-ios-demo */,
+				9D5A1AA21D80099200834F98 /* RTPageControl-ios-demoTests */,
+				9D5A1AAD1D80099200834F98 /* RTPageControl-ios-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D5A1A8D1D80099100834F98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5A1ACE1D800A1600834F98 /* Main.storyboard in Resources */,
+				9D5A1ACC1D800A1600834F98 /* Assets.xcassets in Resources */,
+				9D5A1ACD1D800A1600834F98 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5A1AA11D80099200834F98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5A1AAC1D80099200834F98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87E9130D7646C99D30AE2A33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTPageControl-ios-demo/Pods-RTPageControl-ios-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95A0762776BCCFC47E8CB2C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4CBDF619BA7ED151C686515 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTPageControl-ios-demo/Pods-RTPageControl-ios-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D5A1A8B1D80099100834F98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5A1ACB1D800A1600834F98 /* ViewController.swift in Sources */,
+				9D5A1ACA1D800A1600834F98 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5A1A9F1D80099200834F98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5A1AA81D80099200834F98 /* RTPageControl_ios_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5A1AAA1D80099200834F98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5A1AB31D80099200834F98 /* RTPageControl_ios_demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D5A1AA51D80099200834F98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D5A1A8E1D80099100834F98 /* RTPageControl-ios-demo */;
+			targetProxy = 9D5A1AA41D80099200834F98 /* PBXContainerItemProxy */;
+		};
+		9D5A1AB01D80099200834F98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D5A1A8E1D80099100834F98 /* RTPageControl-ios-demo */;
+			targetProxy = 9D5A1AAF1D80099200834F98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D5A1AC61D800A1600834F98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D5A1AC71D800A1600834F98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9D5A1AC81D800A1600834F98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D5A1AC91D800A1600834F98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D5A1AB51D80099200834F98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D5A1AB61D80099200834F98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D5A1AB81D80099200834F98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F4EE0DD9DCDE42E7D4D088 /* Pods-RTPageControl-ios-demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RTPageControl-ios-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.theruntime.RTPageControl-ios-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9D5A1AB91D80099200834F98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F2A184CF8CD8EF4B32C95E /* Pods-RTPageControl-ios-demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RTPageControl-ios-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.theruntime.RTPageControl-ios-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9D5A1ABB1D80099200834F98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RTPageControl-ios-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.theruntime.RTPageControl-ios-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTPageControl-ios-demo.app/RTPageControl-ios-demo";
+			};
+			name = Debug;
+		};
+		9D5A1ABC1D80099200834F98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RTPageControl-ios-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.theruntime.RTPageControl-ios-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTPageControl-ios-demo.app/RTPageControl-ios-demo";
+			};
+			name = Release;
+		};
+		9D5A1ABE1D80099200834F98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RTPageControl-ios-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.theruntime.RTPageControl-ios-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RTPageControl-ios-demo";
+			};
+			name = Debug;
+		};
+		9D5A1ABF1D80099200834F98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RTPageControl-ios-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.theruntime.RTPageControl-ios-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RTPageControl-ios-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D5A1A8A1D80099100834F98 /* Build configuration list for PBXProject "RTPageControl-ios-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5A1AB51D80099200834F98 /* Debug */,
+				9D5A1AB61D80099200834F98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D5A1AB71D80099200834F98 /* Build configuration list for PBXNativeTarget "RTPageControl-ios-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5A1AB81D80099200834F98 /* Debug */,
+				9D5A1AB91D80099200834F98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D5A1ABA1D80099200834F98 /* Build configuration list for PBXNativeTarget "RTPageControl-ios-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5A1ABB1D80099200834F98 /* Debug */,
+				9D5A1ABC1D80099200834F98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D5A1ABD1D80099200834F98 /* Build configuration list for PBXNativeTarget "RTPageControl-ios-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5A1ABE1D80099200834F98 /* Debug */,
+				9D5A1ABF1D80099200834F98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D5A1A871D80099100834F98 /* Project object */;
+}

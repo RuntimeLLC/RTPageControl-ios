@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RTPageControl-ios"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "Customizable page control in swift for iOS."
 
   # This description is used to generate tags and improve search results.

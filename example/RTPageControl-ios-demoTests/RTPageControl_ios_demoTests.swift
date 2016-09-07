@@ -1,15 +1,15 @@
 //
-//  RTPageControl_iosTests.swift
-//  RTPageControl-iosTests
+//  RTPageControl_ios_demoTests.swift
+//  RTPageControl-ios-demoTests
 //
-//  Created by Daniyar Salakhutdinov on 01.09.16.
+//  Created by Daniyar Salakhutdinov on 07.09.16.
 //  Copyright © 2016 Runtime LLC. All rights reserved.
 //
 
 import XCTest
-@testable import RTPageControl_ios
+@testable import RTPageControl_ios_demo
 
-class RTPageControl_iosTests: XCTestCase {
+class RTPageControl_ios_demoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
