@@ -12,38 +12,38 @@ private let RTPageControlDefaultPadding = CGFloat(8)
 private let RTPageControlAnimationDuration = 0.3
 
 public protocol RTPageControlDelegate : NSObjectProtocol {
-    func pageControl(sender: RTPageControl, didSelectPageAtIndex index: Int)
+    func pageControl(_ sender: RTPageControl, didSelectPageAtIndex index: Int)
 }
 
-public class RTPageControl: UIControl {
+open class RTPageControl: UIControl {
     
     /// Color of background dots
-    public var passiveDotColor = UIColor.darkGrayColor() {
+    open var passiveDotColor = UIColor.darkGray {
         didSet {
             resetDots()
         }
     }
     /// Color of selected dot
-    public var activeDotColor = UIColor.whiteColor() {
+    open var activeDotColor = UIColor.white {
         didSet {
             resetDots()
         }
     }
     /// Size of dots
-    public var dotSize: CGSize = RTPageControlDefaultDotImageSize {
+    open var dotSize: CGSize = RTPageControlDefaultDotImageSize {
         didSet {
             resetDots()
         }
     }
     /// Distance between dots
-    public var padding: CGFloat = RTPageControlDefaultPadding {
+    open var padding: CGFloat = RTPageControlDefaultPadding {
         didSet {
             resetDots()
         }
     }
     /// Current page index
-    private var innerCurrentPage: Int = 0
-    public var currentPage: Int {
+    fileprivate var innerCurrentPage: Int = 0
+    open var currentPage: Int {
         get {
             return innerCurrentPage
         }
@@ -52,20 +52,20 @@ public class RTPageControl: UIControl {
         }
     }
     /// Number of pages
-    public var numberOfPages: Int = 0 {
+    open var numberOfPages: Int = 0 {
         didSet {
             resetDots()
         }
     }
     /// Delegate
-    public var delegate: RTPageControlDelegate?
+    open var delegate: RTPageControlDelegate?
     
     /**
      Sets offset over the current page index
      
      - parameter offset: from -1 to 1
      */
-    public func setOffset(offset: CGFloat) {
+    open func setOffset(_ offset: CGFloat) {
         let position = CGFloat(innerCurrentPage) * (dotSize.width + padding) + dotSize.width/2
         let diff = offset * (dotSize.width + padding)
         setCurrentPosition(position + diff, animated: false)
@@ -76,7 +76,7 @@ public class RTPageControl: UIControl {
      
      - parameter index:
      */
-    public func setCurrentPage(index: Int, animated: Bool) {
+    open func setCurrentPage(_ index: Int, animated: Bool) {
         guard index != innerCurrentPage else {
             return
         }
@@ -93,34 +93,34 @@ public class RTPageControl: UIControl {
      - parameter xPosition: coordinate
      - parameter animated:  flag
      */
-    private func setCurrentPosition(xPosition: CGFloat, animated: Bool) {
+    fileprivate func setCurrentPosition(_ xPosition: CGFloat, animated: Bool) {
         if animated {
             CATransaction.begin()
             CATransaction.setAnimationDuration(RTPageControlAnimationDuration)
-            activeDot.position = CGPoint(x: xPosition, y: CGRectGetMidY(parent.bounds))
+            activeDot.position = CGPoint(x: xPosition, y: parent.bounds.midY)
             CATransaction.commit()
         } else {
             CATransaction.begin()
             CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
-            activeDot.position = CGPoint(x: xPosition, y: CGRectGetMidY(parent.bounds))
+            activeDot.position = CGPoint(x: xPosition, y: parent.bounds.midY)
             CATransaction.commit()
         }
     }
     
-    private let parent = CALayer()
-    private let activeDot = CAShapeLayer()
-    private var passiveDots = [CAShapeLayer]()
-    private let lock = NSLock()
+    fileprivate let parent = CALayer()
+    fileprivate let activeDot = CAShapeLayer()
+    fileprivate var passiveDots = [CAShapeLayer]()
+    fileprivate let lock = NSLock()
     
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         // add parent layer
         layer.addSublayer(parent)
         // add active dot
         let size = dotSize
-        activeDot.bounds = CGRect(origin: CGPointZero, size: size)
-        activeDot.path = UIBezierPath(roundedRect: activeDot.bounds, cornerRadius: size.width / 2).CGPath
-        activeDot.fillColor = activeDotColor.CGColor
+        activeDot.bounds = CGRect(origin: CGPoint.zero, size: size)
+        activeDot.path = UIBezierPath(roundedRect: activeDot.bounds, cornerRadius: size.width / 2).cgPath
+        activeDot.fillColor = activeDotColor.cgColor
         parent.addSublayer(activeDot)
         // add tap recognizer
         let recognizer = UITapGestureRecognizer()
@@ -128,7 +128,7 @@ public class RTPageControl: UIControl {
         self.addGestureRecognizer(recognizer)
     }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         // synchronize
         lock.lock()
@@ -136,24 +136,24 @@ public class RTPageControl: UIControl {
             lock.unlock()
         }
         // update parent position
-        parent.position = CGPoint(x: CGRectGetMidX(bounds), y: CGRectGetMidY(bounds))
+        parent.position = CGPoint(x: bounds.midX, y: bounds.midY)
         // update dots position
         let size = dotSize
         // passive dots
         for index in 0..<passiveDots.count {
             let layer = passiveDots[Int(index)]
-            let position = CGPoint(x: CGFloat(index) * (size.width + padding) + size.width/2, y: CGRectGetMidY(parent.bounds))
+            let position = CGPoint(x: CGFloat(index) * (size.width + padding) + size.width/2, y: parent.bounds.midY)
             layer.position = position
         }
         // active dot
         let x = CGFloat(currentPage) * (size.width + padding) + size.width/2
-        activeDot.position = CGPoint(x: x, y: CGRectGetMidY(parent.bounds))
+        activeDot.position = CGPoint(x: x, y: parent.bounds.midY)
     }
     
     /**
      Resets layers
      */
-    private func resetDots() {
+    fileprivate func resetDots() {
         // synchronize
         lock.lock()
         defer {
@@ -161,8 +161,8 @@ public class RTPageControl: UIControl {
         }
         // update active dot appearance
         let activeSize = dotSize
-        activeDot.bounds = CGRect(origin: CGPointZero, size: activeSize)
-        activeDot.path = UIBezierPath(roundedRect: activeDot.bounds, cornerRadius: activeSize.width / 2).CGPath
+        activeDot.bounds = CGRect(origin: CGPoint.zero, size: activeSize)
+        activeDot.path = UIBezierPath(roundedRect: activeDot.bounds, cornerRadius: activeSize.width / 2).cgPath
         // remove previous passive dots
         for layer in passiveDots {
             layer.removeFromSuperlayer()
@@ -170,14 +170,14 @@ public class RTPageControl: UIControl {
         passiveDots.removeAll()
         // update parent layer frame
         let size = dotSize
-        parent.bounds = CGRect(origin: CGPointZero, size: CGSize(width: ((size.width + padding) * CGFloat(numberOfPages) - padding), height: size.height))
+        parent.bounds = CGRect(origin: CGPoint.zero, size: CGSize(width: ((size.width + padding) * CGFloat(numberOfPages) - padding), height: size.height))
         // add new dots
         for index in 0..<numberOfPages {
             let layer = CAShapeLayer()
-            let origin = CGPoint(x: CGFloat(index) * (size.width + padding) + size.width/2, y: CGRectGetMidY(parent.bounds))
+            let origin = CGPoint(x: CGFloat(index) * (size.width + padding) + size.width/2, y: parent.bounds.midY)
             layer.bounds = CGRect(origin: origin, size: size)
-            layer.path = UIBezierPath(roundedRect: layer.bounds, cornerRadius: size.width/2).CGPath
-            layer.fillColor = passiveDotColor.CGColor
+            layer.path = UIBezierPath(roundedRect: layer.bounds, cornerRadius: size.width/2).cgPath
+            layer.fillColor = passiveDotColor.cgColor
             parent.addSublayer(layer)
             passiveDots.append(layer)
         }
@@ -185,12 +185,12 @@ public class RTPageControl: UIControl {
     }
     
     // MARK: - actions
-    @objc private func handleTap(sender: UITapGestureRecognizer) {
+    @objc fileprivate func handleTap(_ sender: UITapGestureRecognizer) {
         // check location inside parent layer
-        let location = sender.locationInView(self)
+        let location = sender.location(in: self)
         let origin = CGPoint(x: parent.position.x - parent.bounds.size.width * parent.anchorPoint.x, y: parent.position.y - parent.bounds.size.height * parent.anchorPoint.y)
         let frame = CGRect(origin: origin, size: parent.bounds.size)
-        guard CGRectContainsPoint(frame, location) else {
+        guard frame.contains(location) else {
             return
         }
         // convert location

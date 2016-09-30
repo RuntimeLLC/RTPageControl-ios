@@ -11,21 +11,21 @@ import RTPageControl_ios
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     
-    @IBOutlet private weak var scrollView: UIScrollView!
-    @IBOutlet private weak var pageControl: RTPageControl!
+    @IBOutlet fileprivate weak var scrollView: UIScrollView!
+    @IBOutlet fileprivate weak var pageControl: RTPageControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // setup page control
-        pageControl.activeDotColor = UIColor.whiteColor()
-        pageControl.passiveDotColor = UIColor.blackColor()
+        pageControl.activeDotColor = UIColor.white
+        pageControl.passiveDotColor = UIColor.black
         pageControl.numberOfPages = 5
     }
     
     // MARK: - scroll view delegate methods
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // get current page index
-        let width = CGRectGetWidth(scrollView.bounds)
+        let width = scrollView.bounds.width
         let pageIndex = (scrollView.contentOffset.x) / width
         let index = Int(pageIndex)
         // get float difference value
