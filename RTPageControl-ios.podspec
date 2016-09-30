@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RTPageControl-ios"
-  s.version      = "1.0.3"
+  s.version      = "2.0.0"
   s.summary      = "Customizable page control in swift for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -40,7 +40,6 @@ RTPageControl is simple UIKit-control written in swift.
   #
 
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -54,9 +53,6 @@ RTPageControl is simple UIKit-control written in swift.
   #
 
   s.author             = { 'Daniyar Salakhutdinov' => 'bluesbastards@gmail.com' }
-  # Or just: s.author    = ""
-  # s.authors            = { "" => "" }
-  # s.social_media_url   = "http://twitter.com/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,15 +60,7 @@ RTPageControl is simple UIKit-control written in swift.
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
   s.platform     = :ios, "8.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
-
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -92,23 +80,6 @@ RTPageControl is simple UIKit-control written in swift.
   #
 
   s.source_files  = "src"
-  # s.exclude_files = "Classes/Exclude"
-
-  # s.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
-
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -118,10 +89,6 @@ RTPageControl is simple UIKit-control written in swift.
   #
 
   s.framework  = "UIKit"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -131,8 +98,5 @@ RTPageControl is simple UIKit-control written in swift.
   #  you can include multiple dependencies to ensure it works.
 
   s.requires_arc = true
-
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
 
 end
