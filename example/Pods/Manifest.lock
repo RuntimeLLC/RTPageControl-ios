@@ -1,12 +1,12 @@
 PODS:
-  - RTPageControl-ios (1.0.3)
+  - RTPageControl-ios (2.0.0)
 
 DEPENDENCIES:
   - RTPageControl-ios
 
 SPEC CHECKSUMS:
-  RTPageControl-ios: 0c9d6828222b7b5557611abce7cb97b64d4c2ca9
+  RTPageControl-ios: c97acd05c005791a4bb562e3fb08cd39b0c349a0
 
 PODFILE CHECKSUM: 357919c2a529b865f4dd0909dd2f436efb29def6
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.2
