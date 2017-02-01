@@ -58,7 +58,7 @@ open class RTPageControl: UIControl {
         }
     }
     /// Delegate
-    open var delegate: RTPageControlDelegate?
+    open weak var delegate: RTPageControlDelegate?
     
     /**
      Sets offset over the current page index
